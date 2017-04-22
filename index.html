@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>timesink</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+</head>
+
+
+<body ng-app = "tilesApp">
+    <div ng-controller = "MainController">
+        <h1 class="title">timesink</h1>
+        <input type="number" ng-model="amount">
+        <p> {{ amount }}</p>        
+        <div>
+            <div class="container">
+                <ul>
+                    <li ng-repeat = "tile in getArray(amount) track by $index">
+                        <div class="tile"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+<script src="js/tilesApp.js"></script>
+
+<script src="js/controllers/MainController.js"></script>
+
+<!-- <script src="js/directives/tileShow.js"></script> -->
+
+
+
+</body>
+
+<!-- eof -->
+</html>

@@ -1,0 +1,30 @@
+* {
+	padding:  0px;
+	margin:  0px;
+}
+
+/*.tile {
+	width: 10%;
+	height: 10px;
+	background-color: #3f3;
+}*/
+
+.tile {
+  border: 0.5px solid black;
+  background-color: #3f3;
+  width: 1%;
+  padding: 1%;
+  box-sizing: border-box;
+  position: relative;
+}
+/*p {
+  position: absolute;
+  top: 0;
+  left: 0;
+}*/
+ul li{
+	display: inline;	
+	list-style-type: none;
+	padding-right: 20px;
+
+}
