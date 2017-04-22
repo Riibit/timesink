@@ -9,11 +9,15 @@
 	background-color: #3f3;
 }*/
 
+.mainArea {
+	background-color: #333;
+}
+
 .tile {
   border: 0.5px solid black;
   background-color: #3f3;
-  width: 1%;
-  padding: 1%;
+  width:10px;
+  padding: 100%;
   box-sizing: border-box;
   position: relative;
 }
@@ -22,9 +26,9 @@
   top: 0;
   left: 0;
 }*/
-ul li{
-	display: inline;	
-	list-style-type: none;
-	padding-right: 20px;
+#tilelist li{
+	margin: 8px 8px 0px 8px;
+	display: inline;
+	float:  left;
 
 }

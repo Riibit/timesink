@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html class="mainArea">
 
 <head>
 
@@ -16,15 +16,15 @@
         <h1 class="title">timesink</h1>
         <input type="number" ng-model="amount">
         <p> {{ amount }}</p>        
-        <div>
-            <div class="container">
-                <ul>
-                    <li ng-repeat = "tile in getArray(amount) track by $index">
-                        <div class="tile"></div>
+        <input type="text" ng-model="color">
+        <p> {{ color }}</p>        
+            <div class="container" >
+                <ul id="tilelist" >
+                    <li ng-repeat = "tile in newArr(amount) track by $index">
+                        <div class="tile" style="background-color:{{'#' + color}}"></div>
                     </li>
                 </ul>
             </div>
-        </div>
     </div>
 
 
