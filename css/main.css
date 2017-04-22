@@ -3,11 +3,22 @@
 	margin:  0px;
 }
 
-/*.tile {
-	width: 10%;
-	height: 10px;
-	background-color: #3f3;
-}*/
+.test {
+  transition: all linear 1s;
+  background-color: lightblue;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.ng-hide {
+  height: 0;
+  width: 0;
+  background-color: transparent;
+  top:-200px;
+  left: 200px;
+}
 
 .mainArea {
 	background-color: #333;
@@ -21,14 +32,14 @@
   box-sizing: border-box;
   position: relative;
 }
-/*p {
-  position: absolute;
-  top: 0;
-  left: 0;
-}*/
+
+#tilelist {
+	width: 100%;
+	height: 100%;
+}
+
 #tilelist li{
 	margin: 8px 8px 0px 8px;
 	display: inline;
 	float:  left;
-
 }
